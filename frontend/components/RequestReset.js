@@ -3,7 +3,7 @@ import Form from './styles/Form';
 import DisplayError from './ErrorMessage';
 import useForm from '../lib/useForm';
 
-const REQUEST_RESET_MUTATION = gql`
+export const REQUEST_RESET_MUTATION = gql`
   mutation REQUEST_RESET_MUTATION($email: String!) {
     sendUserPasswordResetLink(email: $email) {
       code
@@ -28,7 +28,6 @@ export default function RequestReset() {
   async function handleSubmit(e) {
     e.preventDefault();
     const res = await signup();
-    console.log(data, error, loading);
     resetForm();
   }
 

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RequestReset /> renders and matches snapshot 1`] = `
+<div>
+  <form
+    class="Form-sc-1xszr8q-0 hVEEdl"
+    method="POST"
+  >
+    <h2>
+      Request a password reset
+    </h2>
+    <fieldset
+      aria-busy="false"
+    >
+      <label
+        for="email"
+      >
+        Email
+        <input
+          autocomplete="email"
+          id="email"
+          name="email"
+          placeholder="Your Email Address"
+          type="email"
+          value=""
+        />
+      </label>
+    </fieldset>
+    <button
+      type="submit"
+    >
+      Request password reset
+    </button>
+  </form>
+</div>
+`;
